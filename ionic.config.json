@@ -1,0 +1,7 @@
+{
+  "name": "stair-calculator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
