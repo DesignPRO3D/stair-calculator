@@ -1,0 +1,183 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title [class.active]="_stair1">Private Stair A</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">Minimum</ion-col>
+        <ion-col size="4">Maximum</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Rise:</ion-col>
+        <ion-col size="4" class="num-1">150mm</ion-col>
+        <ion-col size="4" class="num-1">220mm</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Going:</ion-col>
+        <ion-col size="4" class="num-1">245mm</ion-col>
+        <ion-col size="4" class="num-1">260mm</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ul>
+      <li>Intended to be used only one dwelling.</li>
+      <li>The maximum pitch for a private stair is 42&deg;</li>
+    </ul>
+    <p class="ion-text-center" *ngIf="!_stair1">
+      <ion-button (click)="onStairNumber(0); _stair1 = true; _stair2 = false; _stair3 = false; _stair4 = false; _stair5 = false " fill="outline" shape="round">
+        Activate
+      </ion-button>
+    </p>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title [class.active]="_stair2">Private Stair B</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">Minimum</ion-col>
+        <ion-col size="4">Maximum</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Rise:</ion-col>
+        <ion-col size="4" class="num-1">165mm</ion-col>
+        <ion-col size="4" class="num-1">200mm</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Going:</ion-col>
+        <ion-col size="4" class="num-1">223mm</ion-col>
+        <ion-col size="4" class="num-1">300mm</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ul>
+      <li>Intended to be used only one dwelling.</li>
+      <li>The maximum pitch for a private stair is 42&deg;</li>
+    </ul>
+    <p class="ion-text-center" *ngIf="!_stair2">
+      <ion-button (click)="onStairNumber(1); _stair1 = false; _stair2 = true; _stair3 = false; _stair4 = false; _stair5 = false" fill="outline" shape="round">
+        Activate
+      </ion-button>
+    </p>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title [class.active]="_stair3">Institutional and Assembly Stair</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">Minimum</ion-col>
+        <ion-col size="4">Maximum</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Rise:</ion-col>
+        <ion-col size="4" class="num-1">135mm</ion-col>
+        <ion-col size="4" class="num-1">180mm</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Going:</ion-col>
+        <ion-col size="4" class="num-1">280mm</ion-col>
+        <ion-col size="4" class="num-1">340mm</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ul>
+      <li>Serving place where many people gather.</li>
+      <li>If the area of a floor of the building is less than 100m&#178;, you may reduce the going to 250mm</li>
+    </ul>
+    <p class="ion-text-center" *ngIf="!_stair3">
+      <ion-button (click)="onStairNumber(2); _stair1 = false; _stair2 = false; _stair3 = true; _stair4 = false; _stair5 = false" fill="outline" shape="round">
+        Activate
+      </ion-button>
+    </p>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title [class.active]="_stair4">Utility Stair</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">Minimum</ion-col>
+        <ion-col size="4">Maximum</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Rise:</ion-col>
+        <ion-col size="4" class="num-1">150mm</ion-col>
+        <ion-col size="4" class="num-1">190mm</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Going:</ion-col>
+        <ion-col size="4" class="num-1">250mm</ion-col>
+        <ion-col size="4" class="num-1">320mm</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ul>
+      <li>Used for escape, access for maintenance, or purpose other than usual route for moving between levels on day-to-day basic.</li>
+    </ul>
+    <p class="ion-text-center" *ngIf="!_stair4">
+      <ion-button (click)="onStairNumber(3); _stair1 = false; _stair2 = false; _stair3 = false; _stair4 = true; _stair5 = false" fill="outline" shape="round">
+        Activate
+      </ion-button>
+    </p>
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title [class.active]="_stair5">Easy Access Stair</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">Minimum</ion-col>
+        <ion-col size="4">Maximum</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Rise:</ion-col>
+        <ion-col size="4" class="num-1">150mm</ion-col>
+        <ion-col size="4" class="num-1">170mm</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" class="ion-text-right">Tread Going:</ion-col>
+        <ion-col size="4" class="num-1">250mm</ion-col>
+        <ion-col size="4" class="num-1">320mm</ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ul>
+      <li>Used by a broad range of users, and on a day-to day-basic, as the usual route between levels.</li>
+      <li>For school buildings, the minimum going is 280mm.</li>
+    </ul>
+    <p class="ion-text-center" *ngIf="!_stair5">
+      <ion-button (click)="onStairNumber(4); _stair1 = false; _stair2 = false; _stair3 = false; _stair4 = false; _stair5 = true" fill="outline" shape="round">
+        Activate
+      </ion-button>
+    </p>
+
+  </ion-card-content>
+</ion-card>

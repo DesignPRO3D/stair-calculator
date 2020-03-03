@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Stair Calculator</string>
+    <string name="title_activity_main">Stair Calculator</string>
+    <string name="package_name">dev.itmagic.staircalculator</string>
+    <string name="custom_url_scheme">dev.itmagic.staircalculator</string>
+</resources>

@@ -6,6 +6,9 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+import { InfoComponent } from './info/info.component';
+import { StairDetailComponent } from './stair-detail/stair-detail.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,6 +21,7 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, InfoComponent, StairDetailComponent],
+  entryComponents: [InfoComponent]
 })
 export class HomePageModule {}
